@@ -1,2 +1,2 @@
 # selectors
-CSS selectors starter repo
+CSS selectors
