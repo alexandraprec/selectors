@@ -54,31 +54,6 @@
         <script>
             document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
             document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
-            
-            /*Functions to Validate the Contact Form*/
-            function validateForm(event){
-              event.preventDefault(); //Prevent the form from submitting
-              //Get form inputs
-              var name= document.getElementById('name').value.trim();
-              var email= document.getElementById('email').value.trim();
-              var message= document.getElementById('message').value.trim();
-              //Check if inputs are empty
-              if(name === '' || message === ''){
-                alert('Please fill out all the fields');
-                return;
-              }
-              //Validate email format
-              var emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-              if(!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
-                return;
-              }
-              //If all validations pass, submit the form (here you can send data to your server)
-              alert('Form submitted successfully!');
-              document.getElementById('contactForm').reset(); //Clear form fieldds
-            }
-            //Add event listener to the form
-            document.getElementById('contactForm').addEventListener('submit', validateForm);
         </script>
     </body>
 </html>
