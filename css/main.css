@@ -43,49 +43,6 @@ nav a:hover{
 }
 /* end nav rules */	
 
-/* Flexbox rules */
- .container{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 20px;
-}
-.box{
-      width: cacl(33.33% - 20px);
-      background-color: #B4CFEC;
-      margin-bottom: 20px;
-      padding: 20px;
-      box-sizing: border-box;
-      border-radius: 15px;
-}
-@media screen nad (max-width: 768px){
-      .container{
-        flex-direction: column;
-      }
-      .box{
-        width: 100%;
-/* End of flexbox rules */          
-          
-/* Form rules */
-form{
-    max-width: 400px;
-    margin: 0 auto;
-}
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #61A5C2;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type="submit"]:hover{
-    background-color: #61A5C2;
-}
-.error{
-    color: #DB5856;
-}
-/* End of form rules */
 
 footer.page-footer{
     clear:both;
